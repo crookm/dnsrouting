@@ -1,18 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using DNSRouting.Models;
 
 namespace DNSRouting.Controllers
 {
-    public class HomeController : Controller
+    public class AlternateController : Controller
     {
+        // GET: /<controller>/
         public string Index()
         {
-            return "Your regular home page.";
+            return "Alternate page";
         }
     }
 }
