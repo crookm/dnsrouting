@@ -9,9 +9,9 @@ namespace DNSRouting.Controllers
     public class AlternateController : Controller
     {
         // GET: /<controller>/
-        public string Index()
+        public string Index(string Host) // Host is set in CustomRouter
         {
-            return "Alternate page";
+            return String.Format("Alternate page, host = {0}", Host);
         }
     }
 }
