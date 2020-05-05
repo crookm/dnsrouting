@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
@@ -11,7 +9,7 @@ using Microsoft.Extensions.Logging;
 
 namespace DNSRouting.Services
 {
-    public class CustomRouter : MvcRouteHandler, IRouter
+  public class CustomRouter : MvcRouteHandler, IRouter
     {
         private IActionContextAccessor _actionContextAccessor;
         private IActionInvokerFactory _actionInvokerFactory;
